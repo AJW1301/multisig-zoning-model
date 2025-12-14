@@ -4,7 +4,7 @@
 
 ## 1. Purpose and Threat Model
 
-This document describes a **zoning-based 2-of-3 multisig architecture** for individual Bitcoin holders. The goal is to remain secure, recoverable, and operational under realistic adverse conditions.
+This document describes a **zoning-based single-user 2-of-3 multisig wallet architecture** for individual Bitcoin holders. The goal is to remain secure, recoverable, and operational under realistic adverse conditions.
 
 The design explicitly addresses three common threat classes:
 
