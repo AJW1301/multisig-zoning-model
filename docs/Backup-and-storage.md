@@ -26,7 +26,6 @@ This model assumes the following categories of artifacts exist.
 This model treats the following as sensitive metadata:
 
 - **Descriptor / wallet configuration**: enough information to reconstruct the multisig wallet in coordinator software. If each signer supports multisig registration and/or exporting the multisig wallet configuration, the descriptor/policy effectively exists in multiple places already (the coordinator wallet plus each registered signer). This only applies if the hardware wallet supports exporting or retaining the multisig wallet configuration.
-  - **Backup approach:** keep **one additional encrypted backup** (e.g., in cloud storage). Store only the **pointer/link** to that encrypted backup in the Master Index.
 
 - **Encrypted wallet backups**: do not enable spending by themselves. If encryption is sound and the decryption secret is not exposed, the contents should not leak privacy. Treat them as sensitive because loss of the decryption secret compromises privacy, and because non-content metadata (existence, filenames, timestamps, size) may still be observable.
   - **Encryption strength requirement:** the decryption secret (passphrase/key) should provide **at least the same bits of entropy as the seed phrase**; otherwise the encrypted backups become the weakest link.
